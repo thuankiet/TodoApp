@@ -1,0 +1,247 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.Todo {
+  margin-top: 50px;
+  width: 420px;
+  height: 700px;
+  background-color: #3faba8;
+  border-radius: 10px;
+}
+
+.IconBar {
+  display: flex;
+}
+
+.IconBar img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.IconBar .Time,
+.Percent {
+  margin: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.IconBar .Time {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.Menu {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  justify-content: center;
+}
+
+.Menu img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.PictureContent {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PictureContent img {
+  width: 350px;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.Button button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #2ac5c1;
+  cursor: pointer;
+  outline: none;
+}
+
+.Content {
+  height: 550px;
+}
+
+.Upcoming .UpcomingContent {
+  height: 330px;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.Title {
+  color: #fff;
+  margin: 1% 5%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.Upcoming .Task {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 2px solid #1abdb9;
+}
+
+.Upcoming .Task p {
+  font-weight: bold;
+  margin: 0 0 0 15px;
+  font-size: 16px;
+}
+
+.Finished .FinishedContent {
+  width: 90%;
+  margin: 0 5%;
+  height: 130px;
+}
+
+.FinishedContent .Task {
+  height: 50px;
+  width: 100%;
+  background-color: #6ac5bb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+  border: 2px solid #1abdb9;
+}
+
+.Finished .Task p {
+  font-weight: bold;
+  margin: 0 0 0 15px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.ModalContent {
+  height: 550px;
+  display: flex;
+}
+
+.Modal {
+  width: 90%;
+  height: 200px;
+  margin: 150px 5%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal .Label {
+  color: #000;
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #ffab00;
+  border-bottom: 1px solid #aaa;
+}
+
+.Modal .Label p {
+  margin: 0 10px;
+  flex-grow: 1;
+  color: #fff;
+}
+
+.Modal .Label button {
+  font-weight: bold;
+  border: none;
+  font-size: 20px;
+  background-color: #ffab00;
+  margin: 10px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+}
+
+.Modal .InputField {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #aaa;
+}
+
+.Modal .InputField input {
+  border: none;
+  outline: none;
+  width: 320px;
+  height: 35px;
+  font-size: 20px;
+  background-color: #3faba8;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.Modal .AddButton {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+.Modal .AddButton button {
+  background-color: #ffab00;
+  font-weight: bold;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.overFlow {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
